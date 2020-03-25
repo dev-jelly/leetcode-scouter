@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from scouter.views import ProblemList
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('products', ProblemList.as_view()),
 ]

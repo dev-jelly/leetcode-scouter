@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from rest_framework.generics import ListAPIView
 
-# Create your views here.
+from scouter.serializers import ProblemSerializer
+
+
+class ProblemList(ListAPIView):
+    serializer_class = ProblemSerializer
