@@ -2,3 +2,4 @@ django
 django_extensions
 selenium
 requests
+rest_framework
